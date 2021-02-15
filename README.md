@@ -2,6 +2,11 @@
 
 The model is built in **pytorch** Deployed as a **REST API** using **Flask** 
 
+## Dependencies 
+```
+pip install -r requirements.txt 
+```
+
 ## Dataset Collection
 
 Scraped 1200+ samples for model training, validation & testing using `selenium` which then filterd to 1200 samples 
