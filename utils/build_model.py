@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 from torchvision import models, transforms
-import io
 from PIL import Image
 
 
@@ -13,7 +12,7 @@ def transform_image(image):
                       transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
                     ])      
 
-    image = Image.open(io.BytesIO(image))
+    image = Image.open(image)
     return transform_pipeline(image).unsqueeze(0)                  
       
       
