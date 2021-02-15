@@ -1,6 +1,6 @@
 # Day-Night Classifier 
 
-The model is built in **pytorch** Deployed as a **REST API** using **Flask** 
+The model is built in **pytorch** and deployed as a **REST API** using **Flask** 
 
 ## Dependencies 
 
@@ -29,7 +29,7 @@ transforms.Compose([
 Model is finetuned on **resnet-101** with **Adam** optimizer and hyperparameters:
 ```python
 batch_size = 32
-n_epochs = 16
+n_epochs = 32
 learning_rate = 0.0001
 betas = (0.9, 0.999)
 ```
@@ -49,17 +49,17 @@ betas = (0.9, 0.999)
 ## File Structure
 
 - app.py: Flask API application
-- build_model.py: Utilities for building inference model 
-- scraping_data.ipynb: Jupyter notebook for scraping data
+- build_model.py: Utilities for building the inference model 
+- scraping_data.ipynb: Jupyter notebook for scraping the data
 - train.classifier.ipynb: Jupyter notebook for training the model
 
 - lib/models: Should contain **saved_weights** for the trained model
 
-Please download the model weights from this: 
-<a href="https://drive.google.com/drive/folders/1dcfz1sulyhUuEo7Pbtfk0h6-fspvT5Zj?usp=sharing"> Model_Weights</a>
+Please download the model weights from this : 
+<a href="https://drive.google.com/drive/folders/1dcfz1sulyhUuEo7Pbtfk0h6-fspvT5Zj?usp=sharing"> link</a>
 also, you'll find the scraped dataset through this link <br>
 
-### For model trainging on colab notebook <br>
+### For model training on colab notebook <br>
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1UYwYAH1jHbZKKZvW-jZug6-A4fI0Aywy)
 
