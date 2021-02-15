@@ -54,8 +54,13 @@ betas = (0.9, 0.999)
 - train.classifier.ipynb: Jupyter notebook for training the model
 
 - lib/models: Should contain **saved_weights** for the trained model
+    - You should make a new directory lib/models in the current working directory 
+    
+    - ```bash 
+      mkdir lib && cd lib && mkdir models
+      ```
 
-Please download the model weights from this : 
+Please download the model weights from this: 
 <a href="https://drive.google.com/drive/folders/1dcfz1sulyhUuEo7Pbtfk0h6-fspvT5Zj?usp=sharing"> link</a>
 also, you'll find the scraped dataset through this link <br>
 
